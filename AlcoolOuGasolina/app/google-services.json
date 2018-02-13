@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "1059986524205",
+    "firebase_url": "https://appkotin.firebaseio.com",
+    "project_id": "appkotin",
+    "storage_bucket": "appkotin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1059986524205:android:c517b879552cb1d5",
+        "android_client_info": {
+          "package_name": "com.example.harlan.appkotlin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1059986524205-bja3et8u4ls1bbqc35h01h7gpsv0k2to.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzVIP4sg1Oh6gX0-Flvvd_eMpp6Y0hn8I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1059986524205:android:7081d0b61bb866ba",
+        "android_client_info": {
+          "package_name": "br.com.harlan.alcoolougasolina"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1059986524205-bja3et8u4ls1bbqc35h01h7gpsv0k2to.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzVIP4sg1Oh6gX0-Flvvd_eMpp6Y0hn8I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.harlan.avaliabus.view.LoginActivity">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.07" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.93" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/app_name"
+        android:textColor="@color/colorAccent"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/imageView3"
+        android:layout_width="58dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon_avalia_bus" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/til_senha_login"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="@+id/guideline4">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edt_email_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:inputType="textWebEmailAddress"
+            android:textColor="@color/textColorPrimary"
+            android:textColorHint="@color/textColorPrimary" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_senha_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="@integer/password_length"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:passwordToggleEnabled="true">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edt_senha_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/senha"
+            android:inputType="textPassword"
+            android:maxLength="@integer/password_length"
+            android:textColor="@color/textColorPrimary"
+            android:textColorHint="@color/textColorPrimary" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="100dp"
+        android:background="@color/textColorPrimary"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textColor="@color/textMenuColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/til_senha_login"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_registrar_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/tv_registro"
+        android:textColor="@color/textColorPrimary"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_esqueci_senha_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/esqueci_senha"
+        android:textColor="@color/textColorPrimary"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
+</android.support.constraint.ConstraintLayout>

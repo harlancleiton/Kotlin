@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "969522669803",
+    "firebase_url": "https://avaliabus-c9860.firebaseio.com",
+    "project_id": "avaliabus-c9860",
+    "storage_bucket": "avaliabus-c9860.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:969522669803:android:e4e897baa95df3a9",
+        "android_client_info": {
+          "package_name": "br.com.harlan.avaliabus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "969522669803-79ql17b37bkp2duubef6pm6tts05p99u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.harlan.avaliabus",
+            "certificate_hash": "814699a30f7895c85303730f49fb07de78e874e2"
+          }
+        },
+        {
+          "client_id": "969522669803-p4avru9qsa9f3o3i21aptu2dll1phj9g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.harlan.avaliabus",
+            "certificate_hash": "9fb54b55175852f08a6fe051a781b0d3a3316708"
+          }
+        },
+        {
+          "client_id": "969522669803-pui0nph2rse95p8ia5u3jp29r6f5uhi9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3OXdTs6SKwEPgElVyKQ6W7UKkY5-RkYs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "969522669803-pui0nph2rse95p8ia5u3jp29r6f5uhi9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:969522669803:android:5c8345e99dc86d7b",
+        "android_client_info": {
+          "package_name": "br.harlan.avaliabus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "969522669803-4av4qaep4hsmemac15pdf52rhr6mhvd9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.harlan.avaliabus",
+            "certificate_hash": "814699a30f7895c85303730f49fb07de78e874e2"
+          }
+        },
+        {
+          "client_id": "969522669803-pui0nph2rse95p8ia5u3jp29r6f5uhi9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3OXdTs6SKwEPgElVyKQ6W7UKkY5-RkYs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "969522669803-pui0nph2rse95p8ia5u3jp29r6f5uhi9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

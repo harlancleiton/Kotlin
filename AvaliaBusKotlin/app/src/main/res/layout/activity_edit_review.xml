@@ -1,0 +1,426 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:context="br.com.harlan.avaliabus.view.EditReviewActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <Spinner
+            android:id="@+id/spinner_cidades_editar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toEndOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edt_numero_onibus_editar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:hint="@string/numero_onibus"
+            android:inputType="number"
+            android:textColor="@color/textColorPrimary"
+            android:textColorHint="@color/textColorPrimary"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toEndOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edt_numero_linha_editar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="72dp"
+            android:gravity="center"
+            android:hint="@string/numero_linha"
+            android:inputType="number"
+            android:textColor="@color/textColorPrimary"
+            android:textColorHint="@color/textColorPrimary"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toEndOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="@string/onibus"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toEndOf="@+id/guideline3"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/edt_numero_linha_editar" />
+
+        <RatingBar
+            android:id="@+id/rb_onibus_editar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:numStars="5"
+            android:scaleX=".5"
+            android:scaleY=".5"
+            android:stepSize="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <CheckBox
+            android:id="@+id/cb_onibus_lotado_editar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/cb_onibus_lotado"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/rb_onibus_editar" />
+
+        <CheckBox
+            android:id="@+id/cb_onibus_sujo_editar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/onibus_sujo"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/cb_onibus_lotado_editar" />
+
+        <CheckBox
+            android:id="@+id/cb_janela_quebrada_editar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/onibus_janelas_quebradas"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/cb_onibus_sujo_editar" />
+
+        <CheckBox
+            android:id="@+id/cb_assentos_quebrados_editar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/onibus_assentos_quebrados"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/cb_janela_quebrada_editar" />
+
+        <CheckBox
+            android:id="@+id/cb_lampadas_queimadas_editar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/onibus_lampadas_queimadas"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/cb_assentos_quebrados_editar" />
+
+        <CheckBox
+            android:id="@+id/cb_onibus_quebrou_editar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/onibus_quebrou"
+            app:layout_constraintEnd_toEndOf="@id/guideline3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/cb_lampadas_queimadas_editar" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="@string/motorista"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/cb_onibus_quebrou_editar" />
+
+        <RatingBar
+            android:id="@+id/rb_motorista_editar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:numStars="5"
+            android:scaleX=".5"
+            android:scaleY=".5"
+            android:stepSize="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <CheckBox
+            android:id="@+id/cb_motorista_nao_parou_editar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/motorista_nao_parou"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/rb_motorista_editar" />
+
+        <CheckBox
+            android:id="@+id/cb_motorista_celular_editar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/motorista_celular"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/cb_motorista_freou_bruscamente_editar" />
+
+        <CheckBox
+            android:id="@+id/cb_motorista_freou_bruscamente_editar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/motorista_freou_bruscamente"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/cb_motorista_velocidade_editar" />
+
+        <CheckBox
+            android:id="@+id/cb_motorista_velocidade_editar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/motorista_velocidade_permitida"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/cb_motorista_nao_parou_editar" />
+
+        <TextView
+            android:id="@+id/textview_seguranca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="@string/seguranca"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/guideline3"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/cb_motorista_celular_editar" />
+
+        <RatingBar
+            android:id="@+id/rb_seguranca_editar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:numStars="5"
+            android:scaleX=".5"
+            android:scaleY=".5"
+            android:stepSize="0.5"
+            app:layout_constraintEnd_toEndOf="@id/guideline3"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/textview_seguranca" />
+
+        <CheckBox
+            android:id="@+id/cb_onibus_assaltado_editar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/onibus_assaltado"
+            app:layout_constraintEnd_toEndOf="@id/guideline3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/rb_seguranca_editar" />
+
+        <CheckBox
+            android:id="@+id/cb_atos_vandalismo_editar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/atos_vandalismo"
+            app:layout_constraintEnd_toEndOf="@id/guideline3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/cb_onibus_assaltado_editar" />
+
+        <CheckBox
+            android:id="@+id/cb_brigas_onibus_editar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/brigas_onibus"
+            app:layout_constraintEnd_toEndOf="@id/guideline3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/cb_atos_vandalismo_editar" />
+
+        <TextView
+            android:id="@+id/textview_linha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="@string/linha"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/guideline3"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/cb_brigas_onibus_editar" />
+
+        <RatingBar
+            android:id="@+id/rb_linha_editar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:numStars="5"
+            android:scaleX=".5"
+            android:scaleY=".5"
+            android:stepSize="0.5"
+            app:layout_constraintEnd_toEndOf="@id/guideline3"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/textview_linha" />
+
+        <CheckBox
+            android:id="@+id/cb_percurso_longo_editar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/percurso_longo"
+            app:layout_constraintEnd_toEndOf="@id/guideline3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/rb_linha_editar" />
+
+        <CheckBox
+            android:id="@+id/cb_linha_areas_arriscadas_editar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/linha_areas_arriscadas"
+            app:layout_constraintEnd_toEndOf="@id/guideline3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/cb_percurso_longo_editar" />
+
+        <CheckBox
+            android:id="@+id/cb_linha_assaltada_constantemente_editar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/linha_assaltada_constantemente"
+            app:layout_constraintEnd_toEndOf="@id/guideline3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/cb_linha_areas_arriscadas_editar" />
+
+        <EditText
+            android:id="@+id/edt_observacoes_editar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:hint="@string/observacoes"
+            android:inputType="textCapSentences|textMultiLine"
+            android:textColorHint="@color/masterDetailColor"
+            app:layout_constraintEnd_toEndOf="@id/guideline3"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/cb_linha_assaltada_constantemente_editar" />
+
+        <Button
+            android:id="@+id/btn_enviar_avaliacao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/masterDetailColor"
+            android:gravity="center"
+            android:text="@string/enviar"
+            android:textColor="@color/textMenuColor"
+            app:layout_constraintEnd_toEndOf="@id/guideline3"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/edt_observacoes_editar" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="31dp"
+            android:layout_marginStart="19dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/spinner_cidades_editar"
+            app:layout_constraintGuide_percent="0.05"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="18dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintGuide_percent="0.95"
+            app:layout_constraintStart_toEndOf="@+id/spinner_cidades_editar" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

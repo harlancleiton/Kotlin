@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#2980b9</color>
+    <color name="colorPrimary">#3498DB</color>
+    <color name="windowBackground">#ecf0f1</color>
+    <color name="textColorPrimary">#2c3e50</color>
+    <color name="masterDetailColor">#2c3e50</color>
+    <color name="acentColor">#e74c3c</color>
+    <color name="colorAccent">#e74c3c</color>
+    <color name="textMenuColor">#ecf0f1</color>
+    <color name="tabColor">#db7734</color>
+</resources>
